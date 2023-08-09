@@ -1,4 +1,7 @@
-import { Header } from '@/components/shared';
+import Hero from '@/components/Hero/Hero';
+import LiveStats from '@/components/LiveStats/LiveStats';
+import RecentPost from '@/components/RecentPost/RecentPost';
+import Team from '@/components/Team/Team';
 import Head from 'next/head';
 
 export default function Home() {
@@ -11,7 +14,11 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
+      <Hero />
+      <Team />
+      <LiveStats />
+      <RecentPost />
     </>
   );
 }

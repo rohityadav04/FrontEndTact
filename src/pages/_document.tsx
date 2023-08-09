@@ -7,7 +7,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Atkinson+Hyperlegible&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </Head>

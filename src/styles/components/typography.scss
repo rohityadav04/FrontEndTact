@@ -1,45 +1,43 @@
 .heading {
-  font-size: 1.4rem;
-  font-weight: 100;
-  margin-bottom: 1rem;
-  font-family: var(--font-title);
-  color: var(--color-white);
-  @include devices(mobile) {
-    font-size: 1.1rem;
+  font-family: var(--global-font);
+  color: var(--black);
+  font-size: 4.35rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 151.023%;
+  text-transform: uppercase;
+}
+.heading-big {
+  font-size: 4.7rem;
+}
+.team-container {
+  .heading {
+    color: var(--white);
   }
-  &.h1 {
-    font-size: 3rem;
-    @include devices(ipad) {
-      font-size: 2rem;
-    }
-    @include devices(mobile) {
-      font-size: 1.37rem;
-    }
+}
+.livestats-heading {
+  color: var(--white);
+}
+.livestats-card {
+  .subHeading {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--global-font);
+    font-size: 2.55281rem;
+    font-weight: 400;
+    line-height: 151.023%;
+    text-transform: uppercase;
   }
-  &.h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.9rem;
-    @include devices(ipad) {
-      font-size: 1.8rem;
-    }
-    @include devices(mobile) {
-      font-size: 1.37rem;
-      margin-bottom: 1.2rem;
-    }
+  .heading {
+    color: var(--red);
+    text-align: center;
+    font-family: var(--global-font);
+    font-size: 5.49025rem;
+    font-weight: 600;
+    line-height: 151.023%;
+    text-transform: uppercase;
   }
-  &.h3 {
-    font-size: 2rem;
-    @include devices(mobile) {
-      font-size: 1.3rem;
-    }
-  }
-  &.h4 {
-    font-size: 1.5rem;
-  }
-  &.h5 {
-    font-size: 1.3rem;
-  }
-  &.h6 {
-    font-size: 1.1rem;
+  .heading-green {
+    color: var(--green);
   }
 }

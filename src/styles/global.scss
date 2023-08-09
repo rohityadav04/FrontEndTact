@@ -1,17 +1,12 @@
 :root {
-  --primary: #a08dff;
-  --font-title: 'Archivo', sans-serif;
-  --font-body: 'Atkinson Hyperlegible', sans-serif;
-  --text-color: #8f8eb6;
-  --black-500: #171717;
-  --grey-500: #2f2f31;
-  --grey-900: #212121;
-  --grey-1000: #131212;
-  --bg-color-dark: #f6f8fa;
-  --bg-section: #fff;
-  --color-danger: #f50;
-  --color-white: #f2f2ff;
-  --border-radius: 20px;
+  --bg-color: #14111b;
+  --green-gradient: linear-gradient(90deg, #00ff75 0%, #19ff83 68.76%);
+  --royal-blue: #5d79ff;
+  --global-font: 'Prompt', sans-serif;
+  --black: #000;
+  --white: #fff;
+  --green: #19ff83;
+  --red: #ff1962;
 }
 
 html {
@@ -28,7 +23,7 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #080809;
+  background-color: var(--bg-color);
 }
 html,
 body {
@@ -44,7 +39,6 @@ body {
   box-sizing: border-box;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -52,4 +46,42 @@ a {
 .auto-fit-image {
   object-fit: contain;
   height: unset;
+}
+
+.container {
+  // width: 100%;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  // margin-right: auto;
+  // margin-left: auto;
+  // margin-top: 0rem;
+}
+.btn {
+  display: inline-flex;
+  padding: 1.03613rem 2.41763rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7.94356rem;
+  background: var(--black);
+  font-family: var(--global-font);
+  font-size: 1.466rem;
+  font-weight: 500;
+  letter-spacing: 0.14669rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.team-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 3.35125rem;
+  gap: 0.9375rem;
+  border-radius: 11.01119rem;
+  font-size: 2.03306rem;
+  font-weight: 500;
+  letter-spacing: 0.20331rem;
+  text-transform: uppercase;
+  font-family: var(--global-font);
+  color: var(--black);
 }
