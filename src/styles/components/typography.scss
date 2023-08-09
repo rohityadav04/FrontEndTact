@@ -1,0 +1,45 @@
+.heading {
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-family: var(--font-title);
+  color: var(--color-white);
+  @include devices(mobile) {
+    font-size: 1.1rem;
+  }
+  &.h1 {
+    font-size: 3rem;
+    @include devices(ipad) {
+      font-size: 2rem;
+    }
+    @include devices(mobile) {
+      font-size: 1.37rem;
+    }
+  }
+  &.h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.9rem;
+    @include devices(ipad) {
+      font-size: 1.8rem;
+    }
+    @include devices(mobile) {
+      font-size: 1.37rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+  &.h3 {
+    font-size: 2rem;
+    @include devices(mobile) {
+      font-size: 1.3rem;
+    }
+  }
+  &.h4 {
+    font-size: 1.5rem;
+  }
+  &.h5 {
+    font-size: 1.3rem;
+  }
+  &.h6 {
+    font-size: 1.1rem;
+  }
+}

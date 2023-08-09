@@ -1,0 +1,147 @@
+@import '/src/styles/variables.scss';
+
+.root {
+  background: rgba(73, 73, 99, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  margin: 1.5625rem;
+  padding: 1rem 1.375rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 1600px) {
+    max-width: $maxSectionWidth;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include devices(mobile) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+  }
+  &.active {
+    .hamburgerMenu {
+      span:nth-of-type(1) {
+        transform: rotate(-45deg) translate(-4px, -2px);
+      }
+      span:nth-of-type(2) {
+        opacity: 0;
+      }
+      span:nth-of-type(3) {
+        transform: rotate(45deg) translate(-1px, 5px);
+      }
+    }
+  }
+
+  .hamburgerMenu {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include devices(mobile) {
+      display: flex;
+    }
+    span {
+      background-color: #f2f2ff;
+      border-radius: 1em;
+      width: 100%;
+      height: 1px;
+      display: block;
+      &:nth-of-type(1) {
+        transform-origin: 100% 0%;
+        transition: transform 100ms ease-in-out;
+      }
+      &:nth-of-type(3) {
+        transform-origin: 100% 100%;
+        transition: transform 100ms ease-in-out;
+      }
+    }
+  }
+  .logo {
+    @include devices(mobile) {
+      width: 60px;
+    }
+  }
+  .desktopMenu {
+    @include devices(mobile) {
+      display: none;
+    }
+  }
+}
+.menuWrapper {
+  display: flex;
+  justify-content: flex-end;
+  @include devices(mobile) {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 9, 0.9) 0%,
+      rgba(8, 8, 9, 0) 100%
+    );
+    backdrop-filter: blur(9px);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.menuItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include devices(mobile) {
+    flex-direction: column;
+  }
+
+  &:last-of-type {
+    justify-content: flex-end;
+  }
+  .item {
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    &.active {
+      color: var(--primary);
+    }
+  }
+}
+.mobileMenu {
+  display: none;
+  .menuWrapper {
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in;
+    @include devices(mobile) {
+      display: flex;
+    }
+  }
+  .btnAction {
+    display: none;
+  }
+  &.active {
+    .menuWrapper {
+      transform: translateX(0);
+    }
+  }
+  @include devices(mobile) {
+    display: block;
+  }
+}
