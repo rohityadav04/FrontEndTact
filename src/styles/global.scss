@@ -85,3 +85,30 @@ a {
   font-family: var(--global-font);
   color: var(--black);
 }
+.ant-modal-root {
+  .ant-modal-body {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .connect-btn {
+    display: inline-flex;
+    padding: 0.7rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.51056rem;
+    border-radius: 11.74294rem;
+    background: var(--white) !important;
+  }
+  .ant-modal-content {
+    background: #1f1f1f4a;
+  }
+  .ant-modal-footer {
+    .ant-btn-default {
+      display: none;
+    }
+    .ant-btn-primary {
+      display: none;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FC } from 'react';
+import ConnectModal from '../OpenModel/OpenModel';
 import s from './Hero.module.scss';
 
 const Hero: FC = () => {
@@ -39,6 +40,9 @@ const Hero: FC = () => {
               />
             </div>
           </div>
+        </div>
+        <div className={s.modal}>
+          <ConnectModal />
         </div>
       </div>
     </>

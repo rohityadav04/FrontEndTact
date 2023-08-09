@@ -1,12 +1,37 @@
+'use client';
 import Image from 'next/image';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import s from './Team.module.scss';
 
 const Team: FC = () => {
+  const [isClose, setIsClose] = useState(false);
+
+  const SetClose = () => {
+    setIsClose(true);
+  };
+
   return (
     <>
       <div className={s.root}>
         <div className={`container ${s.container}`}>
+          {isClose ? (
+            ''
+          ) : (
+            <div className={`closeable-Section ${s.closeableSection}`}>
+              <div className={`text ${s.text}`}>
+                John made bet on <span>MSK</span> for 0.22 ETH
+              </div>
+              <div className={s.cross}>
+                <Image
+                  alt="cross"
+                  height={21}
+                  width={20}
+                  src="/images/icon/cross.png"
+                  onClick={SetClose}
+                />
+              </div>
+            </div>
+          )}
           <div className={s.logoContainer}>
             <Image
               alt="logo"
