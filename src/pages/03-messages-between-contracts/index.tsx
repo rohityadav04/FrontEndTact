@@ -1,7 +1,7 @@
-import Team from '@/components/DashBoard/Dashboard';
+import MBCFrontEnd from '@/components/ContractFrontEndWork/MBCFrontEnd/MBCFrontEnd';
 import Head from 'next/head';
 
-export default function Home() {
+export default function First() {
   return (
     <>
       <Head>
@@ -11,10 +11,7 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
-      {/* <Header /> */}
-      <Team />
-      {/* <LiveStats /> */}
-      {/* <RecentPost /> */}
+      <MBCFrontEnd />
     </>
   );
 }

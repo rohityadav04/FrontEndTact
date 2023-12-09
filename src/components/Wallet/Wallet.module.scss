@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1rem;
+
+  button,
+  a {
+    background: orangered;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .containerB {
+  }
+}

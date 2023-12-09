@@ -16,7 +16,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-body);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.02em;
   color: var(--text-color);
   line-height: 1.3;
@@ -111,4 +111,68 @@ a {
       display: none;
     }
   }
+}
+
+.go1651228014 {
+  color: #fff !important;
+}
+.go3349661836 {
+  color: #fff !important;
+  // background: #fff !important;
+  // background-color: #fff !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .dataWrappper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+    .buttonWrapper {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      .getBtn {
+        button {
+          background: green;
+          border: none;
+          color: #fff;
+          outline: none;
+          padding: 10px 16px;
+          border-radius: 10px;
+          cursor: pointer;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+      .incrBtn {
+        button {
+          background: violet;
+          border: none;
+          color: #fff;
+          outline: none;
+          padding: 10px 16px;
+          border-radius: 10px;
+          cursor: pointer;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+    .value {
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.home {
+  background: #00ff75 !important;
+  color: black !important;
 }
