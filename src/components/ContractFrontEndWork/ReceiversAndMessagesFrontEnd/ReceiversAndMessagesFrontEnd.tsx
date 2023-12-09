@@ -46,7 +46,7 @@ const ReceiversAndMessagesFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  increment();
+                  // increment();
                 }}
               >
                 Increment{' '}
@@ -55,7 +55,7 @@ const ReceiversAndMessagesFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  decrement();
+                  // decrement();
                 }}
               >
                 Decrement{' '}
@@ -64,7 +64,7 @@ const ReceiversAndMessagesFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  Add();
+                  // Add();
                 }}
               >
                 Add{' '}
@@ -73,7 +73,7 @@ const ReceiversAndMessagesFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  Subtract();
+                  // Subtract();
                 }}
               >
                 Subtract{' '}
@@ -82,7 +82,7 @@ const ReceiversAndMessagesFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  multiMath();
+                  // multiMath();
                 }}
               >
                 MultiMath{' '}

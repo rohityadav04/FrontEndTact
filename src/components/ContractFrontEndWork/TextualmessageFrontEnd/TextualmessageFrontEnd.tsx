@@ -47,7 +47,7 @@ const TextualmessageFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  increment();
+                  // increment();
                 }}
               >
                 Increment{' '}
@@ -56,7 +56,7 @@ const TextualmessageFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  decrement();
+                  // decrement();
                 }}
               >
                 Decrement{' '}
@@ -65,7 +65,7 @@ const TextualmessageFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  IncrementBy2();
+                  // IncrementBy2();
                 }}
               >
                 IncrementBy2{' '}
@@ -74,7 +74,7 @@ const TextualmessageFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  IncrementBy3();
+                  // IncrementBy3();
                 }}
               >
                 IncrementBy3{' '}

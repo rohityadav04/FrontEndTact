@@ -33,7 +33,7 @@ const DeployableTrait = (props: Props) => {
 
     const value = await tactCounter.getCounter();
 
-    setVal(value);
+    // setVal(value);
   };
 
   // Update or increment function

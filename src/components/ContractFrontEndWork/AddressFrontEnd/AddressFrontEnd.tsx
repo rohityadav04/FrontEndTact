@@ -49,7 +49,7 @@ const AddressFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  showAll();
+                  // showAll();
                 }}
               >
                 Show All
@@ -58,7 +58,7 @@ const AddressFrontEnd = (props: Props) => {
             <div className="incrBtn">
               <button
                 onClick={() => {
-                  showOps();
+                  // showOps();
                 }}
               >
                 Show Ops
