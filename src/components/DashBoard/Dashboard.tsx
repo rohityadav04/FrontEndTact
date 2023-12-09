@@ -56,10 +56,10 @@ const DashBoard = (props: Props) => {
             <Link href="/03-messages-between-contracts">
               <div className={s.box}>Messages Between Contracts</div>
             </Link>
-            <Link href="/03-textual-messages">
+            <Link href="/03-send-coins">
               <div className={s.box}>Sending TON Coins</div>
             </Link>
-            <Link href="/03-textual-messages">
+            <Link href="/03-emit">
               <div className={s.box}>Emitting Logs</div>
             </Link>
             <Link href="/03-textual-messages">
