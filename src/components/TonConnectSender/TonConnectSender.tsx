@@ -1,4 +1,3 @@
-import { ITonConnect } from '@tonconnect/ui-react';
 import {
   Address,
   SendMode,
@@ -6,7 +5,8 @@ import {
   SenderArguments,
   beginCell,
   storeStateInit,
-} from 'ton-core';
+} from '@ton/core';
+import { ITonConnect } from '@tonconnect/ui-react';
 class TonConnectSender implements Sender {
   public provider: ITonConnect;
   readonly address?: Address;
