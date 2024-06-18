@@ -1,0 +1,25 @@
+.root {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .dataWrappper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 4rem;
+      .buttonWrapper {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        .getBtn {
+          button {
+            background: green;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

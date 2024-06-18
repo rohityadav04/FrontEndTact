@@ -1,4 +1,4 @@
-import DeployableTrait from '../ContractFrontEnd/DeployableTrait';
+import StudentManagement from '../ContractFrontEnd/StudentManagement';
 import s from './Dashboard.module.scss';
 type Props = {};
 
@@ -11,7 +11,8 @@ const DashBoard = (props: Props) => {
             FrontEnd Integration With Ton BlockChain(Tact)
           </div>
           <div className={s.boxWrapper}>
-            <DeployableTrait />
+            {/* <DeployableTrait /> */}
+            <StudentManagement />
           </div>
         </div>
       </div>
